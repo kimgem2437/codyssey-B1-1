@@ -7,6 +7,10 @@ HTML, CSS, JavaScript를 사용하여 제작한 반응형 개인 포트폴리오
 GitHub API를 통해 Repository 정보를 동적으로 불러오며,
 반응형 레이아웃, 다크 모드, 스크롤 인터랙션, Contact Form 유효성 검사 등을 구현했습니다.
 
+## 배포
+
+https://kimgem2437.github.io/codyssey-B1-1/
+
 ---
 
 ## Tech Stack
@@ -190,11 +194,3 @@ Chrome 개발자 도구를 사용하여 모바일 환경의 전체 페이지를 
 Dark Mode를 적용한 화면입니다.
 
 ![Dark Mode](images/darkmode.png)
-
----
-
-## Deployment
-
-GitHub Pages를 사용하여 배포합니다.
-
-**배포 URL:** GitHub Pages 배포 후 추가
