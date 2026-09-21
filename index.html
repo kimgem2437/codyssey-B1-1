@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>김민재 | Backend Developer</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar">
+            <a href="#hero" class="logo">
+                MINJAE<span>.</span>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-buttons">
+                <button
+                    id="theme-toggle"
+                    type="button"
+                    aria-label="다크 모드 전환"
+                >
+                    🌙
+                </button>
+
+                <button
+                    id="menu-toggle"
+                    type="button"
+                    aria-label="메뉴 열기"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero reveal">
+            <div class="container hero-content">
+                <p class="hero-label">
+                    BACKEND DEVELOPER
+                </p>
+
+                <h1>
+                    안녕하세요.<br>
+                    <span>김민재</span>입니다.
+                </h1>
+
+                <p class="hero-description">
+                    Java와 Spring Boot를 중심으로 백엔드 개발을 공부하며,
+                    사용자에게 필요한 기능을 안정적으로 구현하는 개발자를
+                    목표로 하고 있습니다.
+                </p>
+
+                <div class="hero-buttons">
+                    <a
+                        href="#projects"
+                        class="button primary-button"
+                    >
+                        프로젝트 보기
+                    </a>
+
+                    <a
+                        href="#contact"
+                        class="button secondary-button"
+                    >
+                        연락하기
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section reveal">
+            <div class="container">
+                <div class="section-heading">
+                    <p>01</p>
+                    <h2>About Me</h2>
+                </div>
+
+                <div class="about-content">
+                    <div class="profile-wrapper">
+                        <img
+                            src="images/profile.jpeg"
+                            alt="김민재 프로필 캐릭터 이미지"
+                            class="profile-image"
+                        >
+                    </div>
+
+                    <article class="about-text">
+                        <p class="about-label">
+                            WHO I AM
+                        </p>
+
+                        <h3>
+                            백엔드 개발자를 준비하고 있습니다.
+                        </h3>
+
+                        <p>
+                            Java와 Spring Boot를 중심으로 서버 개발을 공부하고 있습니다.
+                            기능을 구현하는 것뿐만 아니라 데이터 처리와 서비스 구조를
+                            고민하며 안정적으로 동작하는 서비스를 만드는 것을 목표로 합니다.
+                        </p>
+
+                        <p>
+                            프로젝트에서는 인증·인가, 데이터베이스 설계,
+                            Redis를 활용한 기능 구현 등 백엔드 개발을 경험했습니다.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section reveal">
+            <div class="container">
+                <div class="section-heading">
+                    <p>02</p>
+                    <h2>Skills</h2>
+                </div>
+
+                <ul class="skills-list">
+                    <li>Java</li>
+                    <li>Spring Boot</li>
+                    <li>Spring Security</li>
+                    <li>JPA</li>
+                    <li>MySQL</li>
+                    <li>PostgreSQL</li>
+                    <li>Redis</li>
+                    <li>Git</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="section reveal">
+            <div class="container">
+                <div class="section-heading">
+                    <p>03</p>
+                    <h2>Projects</h2>
+                </div>
+
+                <p class="section-description">
+                    GitHub에 등록된 최근 프로젝트를 불러옵니다.
+                </p>
+
+                <div
+                    id="projects-status"
+                    class="projects-status"
+                >
+                    프로젝트를 불러오는 중...
+                </div>
+
+                <div
+                    id="projects-list"
+                    class="projects-grid"
+                >
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section reveal">
+            <div class="container">
+                <div class="section-heading">
+                    <p>04</p>
+                    <h2>Contact</h2>
+                </div>
+
+                <p class="section-description">
+                    아래 내용을 입력하면 유효성을 확인합니다.
+                </p>
+
+                <form id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">이름</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="이름을 입력해주세요."
+                            autocomplete="name"
+                            required
+                        >
+
+                        <p
+                            id="name-error"
+                            class="error-message"
+                        ></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">이메일</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@email.com"
+                            autocomplete="email"
+                            required
+                        >
+
+                        <p
+                            id="email-error"
+                            class="error-message"
+                        ></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">메시지</label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="메시지를 입력해주세요."
+                            required
+                        ></textarea>
+
+                        <p
+                            id="message-error"
+                            class="error-message"
+                        ></p>
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="button primary-button submit-button"
+                    >
+                        보내기
+                    </button>
+
+                    <p
+                        id="form-success"
+                        class="success-message"
+                    ></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <button
+        id="scroll-top"
+        type="button"
+        aria-label="페이지 맨 위로 이동"
+    >
+        ↑
+    </button>
+
+    <footer>
+        <div class="container footer-content">
+            <p>
+                © 2026 김민재
+            </p>
+
+            <a
+                href="https://github.com/kimgem2437"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                GitHub
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
